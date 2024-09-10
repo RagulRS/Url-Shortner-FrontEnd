@@ -11,7 +11,7 @@ const Signup = () => {
 
   const handleSubmit = (e)=>{
     e.preventDefault();
-    Axios.post('http://localhost:2000/auth/signup',{
+    Axios.post('https://url-shortner-backend-1-ypf5.onrender.com/auth/signup',{
         username,
         email,
         password

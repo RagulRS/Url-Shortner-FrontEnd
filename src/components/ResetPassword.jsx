@@ -13,7 +13,7 @@ const {token}=useParams();
 
   const handleSubmit = (e)=>{
     e.preventDefault();
-    Axios.post(`http://localhost:2000/auth/reset-password/${token}`,{
+    Axios.post(`https://url-shortner-backend-1-ypf5.onrender.com/auth/reset-password/${token}`,{
         password,
     }).then(response => {
       if(response.data.status){
